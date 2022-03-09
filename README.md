@@ -1,4 +1,4 @@
-# qa-rails-ec-training-rose
+# transaction-training
 トランザクション、ロックの学習用リポジトリです
 
 ## Docker操作
