@@ -50,4 +50,9 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['JAWSDB_URL']&.sub('mysql://', 'mysql2://') %>
+  database: db
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_NAME'] %>
+  host: <%= ENV['DATABASE_HOST'] %>
+  socket: /var/lib/mysql/mysql.sock
